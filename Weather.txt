@@ -1,0 +1,6 @@
+[Homework] Commit a daily log of weather patterns:
+
+September 13th -The weather forcast today says a high of: 87F and a low of: 49F. The sky should be Sunny today.
+
+Template:
+September 1_th -The weather forcast today says a high of: __F and a low of: __F. The sky should be _____ today.
