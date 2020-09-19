@@ -12,5 +12,7 @@ September 17th -The weather forcast today says a high of: 89F and a low of: 52F.
 
 September 18th -The weather forcast today says a high of: 84F and a low of: 52F. The sky should be Sunny today.
 
+September 19th -The weather forcast today says a high of: 73F and a low of: 54F. The sky should be Cloudy today.
+
 Template:
 September 1_th -The weather forcast today says a high of: __F and a low of: __F. The sky should be _____ today.
