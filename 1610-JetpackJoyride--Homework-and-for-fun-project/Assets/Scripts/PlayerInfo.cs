@@ -6,6 +6,7 @@ public class PlayerInfo : MonoBehaviour
 {
     //Creating Variables Practice
     public float health = 500.0f;
+    public string password = "bwtVK0Vc650LJDKrcBnG";
     
     
     // Start is called before the first frame update
