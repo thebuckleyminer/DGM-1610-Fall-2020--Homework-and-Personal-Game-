@@ -8,6 +8,7 @@ public class PlayerInfo : MonoBehaviour
     public float health = 500.0f;
     public string password = "bwtVK0Vc650LJDKrcBnG";
     public string playerName = "This will be replaced with the users name!";
+    public int points = 0;
     
     
     // Start is called before the first frame update
