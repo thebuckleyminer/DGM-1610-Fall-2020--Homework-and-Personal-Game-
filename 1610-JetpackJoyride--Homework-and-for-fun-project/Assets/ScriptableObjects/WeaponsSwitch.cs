@@ -7,7 +7,10 @@ public class WeaponsSwitch : ScriptableObject
     {
         Guns,
         Mistles,
-        Spikes
+        Spikes,
+        Swords,
+        Mele,
+        Magic
     }
 
     public Weapons currentDefence;
@@ -25,7 +28,15 @@ public class WeaponsSwitch : ScriptableObject
             case Weapons.Spikes:
                 // Function
                 break;
-
+            case Weapons.Swords:
+                // Function
+                break;
+            case Weapons.Mele:
+                // Function
+                break;
+            case Weapons.Magic:
+                // Function
+                break;
         }
     }
 }
