@@ -7,9 +7,12 @@ using UnityEngine.AI;
 public class AIAgentScript : MonoBehaviour
 {
     private NavMeshAgent agent;
-    public Transform destination;
-    
-    
+    private Transform destination;
+    private bool canPatrol = true;
+    private int i = 0;
+
+
+    public List<Transform> patrolPoints;
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -18,12 +21,24 @@ public class AIAgentScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        canPatrol = false;
         destination = other.transform;
     }
-    
+
+    private void OnTriggerExit(Collider other)
+    {
+        canPatrol = true;
+    }
     
     private void Update()
     {
         agent.destination = destination.position;
+        if (!canPatrol) return;
+
+        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        {
+            i = (i + 1) % patrolPoints.Count;
+            destination = patrolPoints[i];
+        }
     }
 }
